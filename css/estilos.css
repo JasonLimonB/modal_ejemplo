@@ -1,0 +1,157 @@
+@import url(fonts.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #f8f8f8;
+}
+
+.header::after,
+.header::before {
+    content: '';
+    width: 5%;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu a {
+    color: #888888;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: rgb(19, 77, 170);
+}
+
+.contenido {
+    margin-top: 80px;
+    text-align: center;
+}
+
+
+/* ******************* 
+    Diseño de modal
+**********************/
+
+.cont-modal {
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s all ease;
+}
+
+.cont-modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    background: #ffffff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    /* transform: scale(0.7); */
+    transition: 0.5s all ease;
+    margin-top: -200px;
+}
+
+.modal.anim {
+    /* transform: scale(1); */
+    transition: 0.5s all ease;
+    margin-top: 0px;
+}
+
+.cerrar {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #bbbbbb;
+    transition: 0.1s ease all;
+    margin-bottom: 20px;
+}
+
+.cerrar:hover {
+    color: #252525;
+}
+
+.titulo-modal {
+    margin-bottom: 50px;
+    font-family: Lato-light;
+}
+
+form input {
+    width: 65%;
+    margin-bottom: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    text-align: left;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #838485;
+}
+
+input:focus,
+input:active {
+    border-bottom: 1px solid #0d60c0;
+}
+
+form .btn_submit {
+    margin-bottom: 20px;
+    background: #0d60c0;
+    color: #fff;
+    width: 25%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    transition: 0.2s all ease;
+}
+
+form .btn_submit:hover {
+    background: #0d61c0e3;
+}
+
+.cuenta {
+    font-size: 14px;
+    color: #0d60c0;
+    text-decoration: none;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Mi Modal</title>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+
+        <div class="menu">
+            <a href="#">Registrarse</a>
+            <a href="#" id="btn-abrir">Iniciar sesión</a>
+        </div>
+
+    </div>
+
+    <div class="contenido">
+        <h2>Bienvenido</h2>
+
+        <p>Este es un modal de sesión</p>
+        <br><br>
+        <p>Click en Iniciar sesión</p>
+    </div>
+
+
+
+    <div class="cont-modal" id="cont-modal">
+        <div class="modal" id="modal">
+            <a href="#" id="cerrar" class="cerrar"><i class="fas fa-times"></i></a>
+            <h3 class="titulo-modal">Inicio de sesión</h3>
+            <form action="">
+                <div class="contenedor_inputs">
+                    <input type="email" placeholder="Correo">
+                    <input type="password" placeholder="Contraseña">
+                </div>
+                <button type="submit" class="btn_submit">Iniciar sesión</button>
+            </form>
+            <a href="#" class="cuenta">¿Ya tienes una cuenta?</a>
+        </div>
+    </div>
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
